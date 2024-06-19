@@ -43,11 +43,10 @@ Welcome to **Shilp Chest Disease Centre**: Your Comprehensive Solution for Top-Q
 
 ## Technologies Used
 
-- **Frontend**: HTML, CSS, JavaScript, React
+- **Frontend**: HTML, CSS, JavaScript, React, NextJS
 - **Backend**: Node.js, Express
-- **Email Notifications**: Nodemailer
+- **Email Notifications**: Nodemailer , Email.JS
 - **Database**: MongoDB (or your chosen database)
-- **Deployment**: Heroku (or your chosen platform)
 
 ## Installation
 
