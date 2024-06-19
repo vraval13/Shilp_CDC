@@ -1,0 +1,81 @@
+/* Define keyframe animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-20px); }
+  60% { transform: translateY(-10px); }
+}
+
+.iconsContainers {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  animation: fadeIn 1.5s ease-in-out;
+  background:linear-gradient(white,lightgray);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.icons {
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  text-align: center;
+  padding: 2.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #bfcedd;
+}
+
+.icons:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  animation: bounce 1s;
+  cursor: pointer;
+}
+
+.icons i {
+  font-size: 4.5rem;
+  color: #FF5733;
+  padding-bottom: .7rem;
+  transition: color 0.3s;
+}
+
+.icons:hover i {
+  color: #FF8C66;
+}
+
+.icons h3 {
+  font-size: 2.5rem;
+  color: #333;
+  padding: .5rem 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s;
+}
+
+.icons:hover h3 {
+  font-weight: bold;
+}
+
+.icons p {
+  font-size: 2.4rem;
+  color: black;
+  transition: color 0.3s;
+}
+
+.icons:hover p {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 999px) {
+  .iconsContainers {
+    grid-template-columns: 1fr 1fr; /* Display all components in one straight line */
+    padding: 2rem; /* Adjust padding for better spacing */
+  }
+}

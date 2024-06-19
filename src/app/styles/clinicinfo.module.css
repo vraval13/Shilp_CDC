@@ -1,0 +1,122 @@
+.contact_info
+{
+  /* background-image: url('/blurbgm.png'); */
+  background: linear-gradient(bottom,white,lightgray);
+  /* background-color: #E3E5E7; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.contact_item {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.contact_item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact_item i {
+  margin-right: 8px;
+  font-size: 1.8rem;
+  color: #FF5733;
+  /* color:red; */
+  cursor: pointer;
+}
+
+.contact_item span {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.appointment_button {
+  font-size: 1.8rem;
+}
+.tooltip-content {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+/* Show tooltip on click */
+.contact_item.show-content .tooltip-content {
+  display: block;
+}
+@media screen and (max-width: 999px) {
+  .contact_info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact_item {
+    margin: 10px 0;
+  }
+
+  .contact_item a span {
+    display: none;
+  }
+  
+  .contact_item a span {
+    display: none;
+  }
+
+  .contact_item a i {
+    font-size: 3rem;
+  }
+
+  .contact_item .appointment_button {
+    font-size: 2.5rem;
+  }
+
+  .contact_item .appointment_button span {
+    display: none;
+  }
+
+  .contact_item .appointment_button i {
+    font-size: 2.5rem;
+  }
+  .pop_out_box {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  .pop_out_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+  }
+
+  .close_button {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    padding: 5px 10px;
+    background: #FF5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+}

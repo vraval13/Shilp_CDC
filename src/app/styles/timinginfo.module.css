@@ -1,0 +1,18 @@
+@media (max-width: 999px) {
+  .timeInfo {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+
+  .info1, .info2 {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    height: 40vh;
+    overflow:auto;
+  }
+}
