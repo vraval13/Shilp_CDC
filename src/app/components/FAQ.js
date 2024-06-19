@@ -47,7 +47,7 @@ function Faq() {
         ))}
       </div>
       {/* <center>
-      <h2 style={{color:"black"}}>Couldn't find answers?</h2>
+      <h2 style={{color:"black"}}>Couldn't find answers? please try again!</h2>
       <Link href={'/contact'}>
         <button>
           Contact us
