@@ -52,4 +52,4 @@ Welcome to **Shilp Chest Disease Centre**: Your Comprehensive Solution for Top-Q
 
 1. Clone the repository
    ```sh
-   git clone https://github.com/yourusername/ShilpChestDiseaseCentre.git
+   git clone https://github.com/vraval13/Shilp_CDC.git
