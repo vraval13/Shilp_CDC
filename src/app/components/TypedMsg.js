@@ -7,7 +7,7 @@ function TypedMessage() {
 
   useEffect(() => {
     const options = {
-      strings: ['Welcome', 'Caring', 'Healing', 'Compassion', 'Trust'],
+      strings: ['Greet','Caring', 'Health', 'Trust','Safety'],
       typeSpeed: 100,
       backSpeed: 50,
       backDelay: 2000,
