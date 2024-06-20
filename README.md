@@ -53,3 +53,24 @@ Welcome to **Shilp Chest Disease Centre**: Your Comprehensive Solution for Top-Q
 1. Clone the repository
    ```sh
    git clone https://github.com/vraval13/Shilp_CDC.git
+
+2. Navigate to the project directory
+   ```sh
+   cd next-project
+
+3. 3. Install dependencies
+   ```sh
+   npm install
+
+## Usage
+
+1. Start the development server
+   ```sh
+   npm start
+2. Open your browser and navigate to
+   ```sh
+   https://localhost:3000
+
+## Contact
+
+Vyom Raval - ravalvyom17@gmail.com
