@@ -218,6 +218,12 @@
   {
     margin-top: 0;
   }
+  .imap
+  {
+    margin-left: 0;
+    width: 100vw;
+    height: 30vh;
+  }
 }
 @media (max-width: 900px) {
   .footer .content .link-boxes {
