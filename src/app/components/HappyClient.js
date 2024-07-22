@@ -15,6 +15,9 @@ const reviews = [
   {
     text:"A doctor with golden heart.Whenever we need help  he available 24*7.\n\nMoney is no matter for him."
   },
+  {
+    text:"Dr Gopal Raval is very knowledgeable, calm, makes you understand your condition in simple and logical manner. \n\n Most tests are performed at his clinic or nearby places in same visit and diagnosis is done well. \n\n We thank you for your guidance and diagnosis offered to us on first visit."
+  },
   // Add more reviews if needed
 ];
 

@@ -21,4 +21,9 @@
     height: 160vh;
     overflow: auto;
   }
+  .hero_image
+  {
+    width: 50%;
+    height: auto;
+  }
 }
