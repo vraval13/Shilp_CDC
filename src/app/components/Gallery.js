@@ -16,6 +16,9 @@ const images = [
   { url: '/gal9.jpg', description: 'Reception Area-II' },
   { url: '/gal10.jpg', description: 'Shilp Pharmacy ' },
   { url: '/gal11.jpg', description: `Dr. Gopal Raval` },
+  { url: '/gal13.png', description: `CSR Activity Lecture` },
+  { url: '/gal14.png', description: `CSR Activity Workshop` },
+
   
 ];
 

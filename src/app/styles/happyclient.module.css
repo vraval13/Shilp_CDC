@@ -54,6 +54,37 @@
   border-left: 5px solid #00b8d4;
   margin: 0;
 }
+.reviewButtonContainer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.reviewButton {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 50px; /* Rounded button */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px; /* Subtle shadow */
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  letter-spacing: 1.5px; /* Added spacing for a cleaner look */
+}
+
+.reviewButton:hover {
+  background-color: #00bcd4; /* Darker shade on hover */
+  /* transform: translateX(-2px);  */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 12px; /* Enhanced shadow on hover */
+}
+
+/* Active button (for when clicked) */
+.reviewButton:active {
+  background-color: #004d40; /* Even darker shade when clicked */
+  transform: translateY(0); /* No lift when clicked */
+}
 
 @keyframes fadeIn {
   from {
@@ -68,5 +99,75 @@
 @media screen and (max-width: 999px){
   .blockquote{
     font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .reviewButton {
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    border-radius: 40px;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .blockquote {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile size (max-width: 576px) */
+@media screen and (max-width: 576px) {
+  .reviewButton {
+    padding: 8px 18px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .left {
+    padding: 2rem;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .blockquote {
+    font-size: 1.6rem;
+  }
+
+  .right {
+    padding: 1rem;
+  }
+}
+
+/* Small mobile (max-width: 400px) */
+@media screen and (max-width: 400px) {
+  .reviewButton {
+    padding: 6px 16px;
+    font-size: 1rem;
+    border-radius: 20px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .blockquote {
+    font-size: 1.4rem;
+  }
+
+  .left {
+    padding: 1.5rem;
   }
 }
