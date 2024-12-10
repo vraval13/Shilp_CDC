@@ -8,6 +8,9 @@ const ImageSlider = () => {
     { src: '/slider3.png', link: null },
     { src: '/slider1.jpg', link: null },
     { src: '/slider4.png', link: 'https://www.sbs.com.au/language/gujarati/gu/podcast-episode/dr-gopal-raval-insomnia/z4euso1tz' },
+    { src: '/slider5.png', link: null },
+    { src: '/slider6.png', link: null },
+    
   ];
 
   const [current, setCurrent] = useState(0);

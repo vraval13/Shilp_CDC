@@ -18,6 +18,9 @@ const images = [
   { url: '/gal11.jpg', description: `Dr. Gopal Raval` },
   { url: '/gal13.png', description: `CSR Activity Lecture` },
   { url: '/gal14.png', description: `CSR Activity Workshop` },
+  { url: '/gal15.png', description: `10th Gujarat Criticon 2024` },
+  // { url: '/gal16.png', description: `10th Gujarat Criticon 2024` },
+  { url: '/gal17.png', description: `10th Gujarat Criticon 2024` },
 
   
 ];
