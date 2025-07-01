@@ -116,7 +116,7 @@ const Footer = () => {
                     <div className={footerStyles.bottom_text}>
 
                         <span className={footerStyles.copyright_text}>© 2024 Created with <GiSelfLove />
-                            <Link href="https://www.instagram.com/cool_guy_0304/" passHref target='_blank'> By Vyom Raval</Link></span>
+                            <Link href="https://vyomraval.vercel.app" passHref target='_blank'> By Vyom Raval</Link></span>
                         <br />
                         <span className={footerStyles.policy_terms}>
                             <Link href="/">All rights reserved</Link> <br />
