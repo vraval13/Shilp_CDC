@@ -39,7 +39,7 @@ export default function Header() {
           </Link>
 
           {/* Typed Message */}
-          <div className="hidden md:block">
+          <div className="md:block">
             <TypedMsg
               words={["Safety", "Greet", "Health", "Trust"]}
               speed={80}
