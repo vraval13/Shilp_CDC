@@ -23,10 +23,11 @@ const galleryImages: GalleryImage[] = [
   { id: 9, title: 'Reception Area - II', category: 'equipment' },
   { id: 10, title: 'Shilp Pharmacy', category: 'equipment' },
   { id: 11, title: 'Dr. Gopal Raval', category: 'equipment' },
-  { id: 13, title: 'CSR Activity Lecture', category: 'team' },
-  { id: 14, title: 'CSR Activity Workshop', category: 'team' },
-  { id: 15, title: '10th Gujarat Criticon 2024', category: 'team' },
-  { id: 17, title: '10th Gujarat Criticon 2024', category: 'team' },
+  { id: 13, title: 'CSR Activity Lecture', category: 'activities' },
+  { id: 14, title: 'CSR Activity Workshop', category: 'activities' },
+  { id: 15, title: '10th Gujarat Criticon 2024', category: 'activities' },
+  { id: 17, title: '10th Gujarat Criticon 2024', category: 'activities' },
+  { id: 16, title: 'Poster Presentation at IMA NATCON 2025', category: 'activities' },
 ];
 
 export default function Gallery() {
@@ -40,7 +41,7 @@ export default function Gallery() {
     { value: 'all', label: 'All Images' },
     { value: 'facilities', label: 'Facilities' },
     { value: 'equipment', label: 'Equipment' },
-    { value: 'team', label: 'Team' },
+    { value: 'activities', label: 'Activities' },
   ];
 
   const handleNavigation = (direction: 'next' | 'prev') => {
