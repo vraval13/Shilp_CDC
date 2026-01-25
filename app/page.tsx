@@ -8,6 +8,7 @@ import ServiceCard from '@/components/ServiceCard';
 import ClinicData from '@/components/ClinicData';
 import HappyClient from '@/components/HappyClient';
 import FAQ from '@/components/FAQ';
+import AchievementSection from '@/components/AchievementSection';
 
 const services = [
   {
@@ -88,6 +89,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <AchievementSection />
 
       <ClinicData />
       <HappyClient />
