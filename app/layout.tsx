@@ -1,6 +1,7 @@
 import React from "react"
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/next'
 import FloatingMenu from '@/components/FloatingMenu'
 import { Toaster } from 'sonner'
@@ -46,6 +47,7 @@ export default function RootLayout({
         <Toaster position="top-right" richColors />
         <Analytics />
       </body>
+      <GoogleAnalytics gaId="G-V40DB84Z77" />
     </html>
   )
 }

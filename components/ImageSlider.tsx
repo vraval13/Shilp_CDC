@@ -10,6 +10,7 @@ interface Slide {
 }
 
 const slides: Slide[] = [
+  { src: '/slider8.jpeg', link: null },
   { src: '/slider3.png', link: null },
   { src: '/slider1.jpg', link: null },
   { src: '/slider4.png', link: 'https://www.sbs.com.au/language/gujarati/gu/podcast-episode/dr-gopal-raval-insomnia/z4euso1tz' },

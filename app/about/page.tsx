@@ -1,7 +1,8 @@
 import Header from '@/components/Header';
 import ClinicInfo from '@/components/ClinicInfo';
 import Footer from '@/components/Footer';
-import { Award, BookOpen, Heart } from 'lucide-react';
+import DoctorCV from '@/components/DoctorCV';
+import { BookOpen, Heart } from 'lucide-react';
 import Image from 'next/image';
 
 export const metadata = {
@@ -10,19 +11,6 @@ export const metadata = {
 };
 
 export default function About() {
-  const qualifications = [
-    'MBBS from MS University, Baroda',
-    'DTCD from MS University, Baroda',
-    'DNB from Jaslok Hospital, Mumbai',
-    'Fellowship in Critical Care Medicine from Jaslok Hospital, Mumbai',
-    'International Board Certification in Sleep Medicine (IBSM)',
-    'European Diploma in Respiratory Medicine (EDARM)',
-    'MNAMS',
-    'FSM',
-    'FCCS (Critical Care)',
-    'HERMES',
-  ];
-
   const expertise = [
     'Lung Cancer',
     'Asthma',
@@ -55,7 +43,6 @@ export default function About() {
       <section className="py-16 bg-white" style={{ backgroundImage: "url('/blurbgm.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
-            {/* Doctor Image */}
             <div className="flex justify-center">
               <Image
                 src="/aboutdr.jpg"
@@ -66,7 +53,6 @@ export default function About() {
               />
             </div>
 
-            {/* Bio Content */}
             <div className="md:col-span-2">
               <h2 className="text-3xl font-bold text-foreground mb-4">
                 Dr. Gopal Raval
@@ -85,46 +71,23 @@ export default function About() {
         </div>
       </section>
 
-      {/* Qualifications Section */}
+      {/* Full CV from professional profile */}
+      <DoctorCV />
+
+      {/* Areas of Expertise */}
       <section className="py-16 bg-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-foreground mb-12 text-center">
-            Professional Qualifications
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Qualifications */}
-            <div className="space-y-4">
-              <div className="flex items-start gap-4">
-                <Award className="text-primary flex-shrink-0 mt-1" size={24} />
-                <div>
-                  <h3 className="font-bold text-foreground text-lg mb-4">Medical Degrees</h3>
-                  <ul className="space-y-2">
-                    {qualifications.map((qual, idx) => (
-                      <li key={idx} className="text-muted-foreground">
-                        ✓ {qual}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Areas of Expertise */}
-            <div className="space-y-4">
-              <div className="flex items-start gap-4">
-                <BookOpen className="text-secondary flex-shrink-0 mt-1" size={24} />
-                <div>
-                  <h3 className="font-bold text-foreground text-lg mb-4">Areas of Expertise</h3>
-                  <ul className="space-y-2">
-                    {expertise.map((area, idx) => (
-                      <li key={idx} className="text-muted-foreground">
-                        ✓ {area}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+          <div className="flex items-start gap-4 max-w-3xl mx-auto">
+            <BookOpen className="text-secondary flex-shrink-0 mt-1" size={24} />
+            <div>
+              <h2 className="font-bold text-foreground text-2xl mb-4">Areas of Expertise</h2>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {expertise.map((area) => (
+                  <li key={area} className="text-muted-foreground">
+                    ✓ {area}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
