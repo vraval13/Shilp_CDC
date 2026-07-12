@@ -228,7 +228,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-slate-700/50 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
-            <p>&copy; 2024 Shilp Chest Disease Centre. All rights reserved.</p>
+            <p>&copy; 2026 Shilp Chest Disease Centre. All rights reserved.</p>
             <p className="flex items-center gap-2">
               Created with <Heart size={14} className="text-red-500 fill-red-500 animate-pulse" /> by{" "}
               <a
